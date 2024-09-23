@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .caja-grid{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            border: solid black;
+            background-color: beige;
+            height: 200px;
+            gap: 10px;
+            padding: 10px;
+        }
+        .interno{
+            border: solid black;
+        }
+        .imagen{
+            border: solid blue;
+            width: 100px;
+            height: auto;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+    <div class="caja-grid">
+        <div class="interno">
+            <img class="imagen" src="https://cdn.pixabay.com/photo/2024/02/22/05/40/natural-scenery-8589165_640.jpg" alt="">
+        </div>
+        <div class="interno">
+
+        </div>
+    </div>
+</body>
+</html>
