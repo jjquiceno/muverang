@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        .container{
+            border: solid black;
+            width: 550px;
+            height: 300px;
+            max-width: 550px;
+            max-height: 300px;
+            display: grid;
+            grid-template-rows: 4fr 1.5fr;
+            border-radius: 30px;
+        }
+        
+        .grid-container{
+            display: grid;
+            grid-template-columns: 1.5fr 2fr;
+            width: 100%;
+            border-radius: 26px 26px 0 0;
+            background-color: aliceblue;
+        }
+        .fotter{
+            width: 100%;
+            border-radius: 0 0 26px 26px;
+            background-color: #b231bc;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        .plataformas{
+            position: relative;
+            border: solid black;
+        }
+        #ios{
+            width: 60%;
+            position: relative;
+        }
+        #android{
+            position: absolute;
+            width: 25%;
+            left: 30%;
+            top: 30%;
+        }
+        #muverang{
+            width: 40%;
+            border: solid black;
+        }
+        #logo{
+            object-fit: cover;
+            width: 100%;
+            height: auto;
+        }
+        .logo{
+            padding: 30px;
+            border: solid black;
+            border-radius: 26px 0 0 0;
+        }
+        .info{
+            border: solid red;
+            border-radius: 0 26px 0 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="grid-container">
+            <div class="logo">
+                <img id="logo" src="https://solidasas.com/front-end/img/Firma-02.png" alt="">
+            </div>
+            <div class="info">
+                <div class="texts">
+
+                </div>
+            </div>
+        </div>
+        <div class="fotter">
+            <div class="plataformas">
+                <a target="_blank" href="https://www.apple.com/co/app-store/"><img id="ios" src="https://solidasas.com/front-end/img/ios.png" alt=""></a>
+                <a target="_blank" href="https://play.google.com/store/games?hl=es&pli=1"><img id="android" src="https://solidasas.com/front-end/img/android.png" alt=""></a>
+            </div>
+            <a href="https://muverang.com/?utm_source=google&utm_medium=cpc&utm_campaign&utm_term=muverang&utm_content&gad_source=1&gclid=Cj0KCQjwxsm3BhDrARIsAMtVz6PrCMU0HCdkw_IhPRsq-NgfuE_xxL_dosysKPACwgYRMKpWAij1xw0aAkCcEALw_wcB"><img id="muverang" src="https://solidasas.com/front-end/img/muverang.png" alt=""></a>
+        </div>
+    </div>
+</body>
+</html>
