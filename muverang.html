@@ -3,13 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- importación de la fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     <title>Document</title>
     <style>
-        @font-face{
-            font-family: 'lex-li';
-            src: url("Lexend-Light.ttf");
-            /* src: url(https://solidasas.com/front-end/fonts/fuentes_web/Lexend-Light.ttf); */
+        /* implementacion de la fuente */
+        .lexend-texts{
+            font-family: "Lexend", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
         }
+
+        /* configuraciones generales */
         *{
             margin: 0;
             padding: 0;
@@ -18,8 +25,9 @@
         html{
             scroll-behavior: smooth;
         }
+
+        /* estilos del cajon principal */
         .container{
-            /* border: solid black; */
             width: 550px;
             height: 300px;
             max-width: 550px;
@@ -28,14 +36,49 @@
             grid-template-rows: 4fr 1.5fr;
             border-radius: 30px;
         }
-        
+
+        /* estilos del primer cajon */
         .grid-container{
             display: grid;
             grid-template-columns: 1.5fr 2fr;
             width: 100%;
             border-radius: 26px 26px 0 0;
-            background-color: aliceblue;
+            background-image: url(https://solidasas.com/front-end/img/lineas.png);
+            background-repeat: no-repeat;
+            background-size: cover;
         }
+        #logo{
+            object-fit: cover;
+            width: 100%;
+            height: auto;
+        }
+        .logo{
+            padding: 30px;
+            border-radius: 26px 0 0 0;
+        }
+        .info{
+            border-radius: 0 26px 0 0;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+        }
+        .texts{
+            width: fit-content;
+            font-family: "Lexend", sans-serif;
+            color: #360680;
+        }
+        .texts h2{
+            font-weight: 350;
+        }
+        .texts a{
+            text-decoration: none;
+            font-family: "Lexend", sans-serif;
+            font-size: 1.5rem;
+            font-weight: 350;
+
+        }
+
+        /* estilos del segundo cajon */
         .fotter{
             width: 100%;
             border-radius: 0 0 26px 26px;
@@ -47,7 +90,6 @@
         }
         .plataformas{
             position: relative;
-            /* border: solid rgb(14, 9, 9); */
         }
         #ios{
             width: 50%;
@@ -61,38 +103,32 @@
         }
         #muverang{
             width: 33%;
-            /* border: solid black; */
         }
-        #logo{
-            object-fit: cover;
-            width: 100%;
-            height: auto;
+
+        /* configuraciones responsive */
+        @media screen and (max-width: 500px){
+            .container{
+                width: 500px;
+                height: 250px;
+                max-width: 500px;
+                max-height: 500px;
+            }
         }
-        .logo{
-            padding: 30px;
-            /* border: solid black; */
-            border-radius: 26px 0 0 0;
+        @media screen and (max-width: 450px){
+            .container{
+                width: 450px;
+                height: 200px;
+                max-width: 450px;
+                max-height: 450px;
+            }
         }
-        .info{
-            /* border: solid red; */
-            border-radius: 0 26px 0 0;
-            display: flex;
-            align-items: center;
-            padding-left: 20px;
-        }
-        .texts{
-            /* border: solid black; */
-            width: fit-content;
-            font-family: 'lex-li';
-            color: #360680;
-        }
-        .texts h2{
-            font-weight: 500;
-        }
-        .texts a{
-            text-decoration: none;
-            font-family: lex-li;
-            font-size: 1.5rem;
+        @media screen and (max-width: 400px){
+            .container{
+                width: 400px;
+                height: 150px;
+                max-width: 400px;
+                max-height: 400px;
+            }
         }
     </style>
 </head>
@@ -109,14 +145,14 @@
                     <br>
                     <h2>+57 310 123 45 67</h2>
                     <br>
-                    <a href="https://muverang.com/?utm_source=google&utm_medium=cpc&utm_campaign&utm_term=muverang&utm_content&gad_source=1&gclid=Cj0KCQjwxsm3BhDrARIsAMtVz6NGYcEM1ui1rQBhhIwyLYWsXWEOe8oVz-k9VHRBbRnqcGQgmRa1zn0aAojqEALw_wcB"><p>www.muverang.com</p></a>
+                    <a target="_blank" href="https://muverang.com/?utm_source=google&utm_medium=cpc&utm_campaign&utm_term=muverang&utm_content&gad_source=1&gclid=Cj0KCQjwxsm3BhDrARIsAMtVz6NGYcEM1ui1rQBhhIwyLYWsXWEOe8oVz-k9VHRBbRnqcGQgmRa1zn0aAojqEALw_wcB"><p>www.muverang.com</p></a>
                 </div>
             </div>
         </div>
         <div class="fotter">
             <div class="plataformas">
-                <a target="_blank" href="https://www.apple.com/co/app-store/"><img id="ios" src="https://solidasas.com/front-end/img/ios.png" alt=""></a>
-                <a target="_blank" href="https://play.google.com/store/games?hl=es&pli=1"><img id="android" src="https://solidasas.com/front-end/img/android.png" alt=""></a>
+                <a target="_blank" href="https://apps.apple.com/co/app/muverang-alquiler-veh%C3%ADculos/id6449945883"><img id="ios" src="https://solidasas.com/front-end/img/ios.png" alt=""></a>
+                <a target="_blank" href="https://play.google.com/store/search?q=muverang&c=apps&hl=es_CO"><img id="android" src="https://solidasas.com/front-end/img/android.png" alt=""></a>
             </div>
             <img id="muverang" src="https://solidasas.com/front-end/img/muverang.png" alt="">
         </div>
