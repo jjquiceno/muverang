@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        @font-face{
+            font-family: 'lex-li';
+            src: url("Lexend-Light.ttf");
+            /* src: url(https://solidasas.com/front-end/fonts/fuentes_web/Lexend-Light.ttf); */
+        }
         *{
             margin: 0;
             padding: 0;
@@ -14,7 +19,7 @@
             scroll-behavior: smooth;
         }
         .container{
-            border: solid black;
+            /* border: solid black; */
             width: 550px;
             height: 300px;
             max-width: 550px;
@@ -34,7 +39,7 @@
         .fotter{
             width: 100%;
             border-radius: 0 0 26px 26px;
-            background-color: #b231bc;
+            background-color: #5e219d;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -42,21 +47,21 @@
         }
         .plataformas{
             position: relative;
-            border: solid black;
+            /* border: solid rgb(14, 9, 9); */
         }
         #ios{
-            width: 60%;
+            width: 50%;
             position: relative;
         }
         #android{
             position: absolute;
-            width: 25%;
-            left: 30%;
+            width: 20%;
+            left: 25%;
             top: 30%;
         }
         #muverang{
-            width: 40%;
-            border: solid black;
+            width: 33%;
+            /* border: solid black; */
         }
         #logo{
             object-fit: cover;
@@ -65,12 +70,29 @@
         }
         .logo{
             padding: 30px;
-            border: solid black;
+            /* border: solid black; */
             border-radius: 26px 0 0 0;
         }
         .info{
-            border: solid red;
+            /* border: solid red; */
             border-radius: 0 26px 0 0;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+        }
+        .texts{
+            /* border: solid black; */
+            width: fit-content;
+            font-family: 'lex-li';
+            color: #360680;
+        }
+        .texts h2{
+            font-weight: 500;
+        }
+        .texts a{
+            text-decoration: none;
+            font-family: lex-li;
+            font-size: 1.5rem;
         }
     </style>
 </head>
@@ -82,7 +104,12 @@
             </div>
             <div class="info">
                 <div class="texts">
-
+                    <h1>Valentina</h1>
+                    <h2>Arango Palacio</h2>
+                    <br>
+                    <h2>+57 310 123 45 67</h2>
+                    <br>
+                    <a href="https://muverang.com/?utm_source=google&utm_medium=cpc&utm_campaign&utm_term=muverang&utm_content&gad_source=1&gclid=Cj0KCQjwxsm3BhDrARIsAMtVz6NGYcEM1ui1rQBhhIwyLYWsXWEOe8oVz-k9VHRBbRnqcGQgmRa1zn0aAojqEALw_wcB"><p>www.muverang.com</p></a>
                 </div>
             </div>
         </div>
@@ -91,7 +118,7 @@
                 <a target="_blank" href="https://www.apple.com/co/app-store/"><img id="ios" src="https://solidasas.com/front-end/img/ios.png" alt=""></a>
                 <a target="_blank" href="https://play.google.com/store/games?hl=es&pli=1"><img id="android" src="https://solidasas.com/front-end/img/android.png" alt=""></a>
             </div>
-            <a href="https://muverang.com/?utm_source=google&utm_medium=cpc&utm_campaign&utm_term=muverang&utm_content&gad_source=1&gclid=Cj0KCQjwxsm3BhDrARIsAMtVz6PrCMU0HCdkw_IhPRsq-NgfuE_xxL_dosysKPACwgYRMKpWAij1xw0aAkCcEALw_wcB"><img id="muverang" src="https://solidasas.com/front-end/img/muverang.png" alt=""></a>
+            <img id="muverang" src="https://solidasas.com/front-end/img/muverang.png" alt="">
         </div>
     </div>
 </body>
